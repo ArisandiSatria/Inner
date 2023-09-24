@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:submission/model/houses.dart';
-import 'package:submission/theme.dart';
+import 'package:Inner/model/houses.dart';
+import 'package:Inner/theme.dart';
 
 class DetailScreen extends StatelessWidget {
   final Houses place;

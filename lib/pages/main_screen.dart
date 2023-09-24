@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:submission/model/houses.dart';
-import 'package:submission/model/popular_cities.dart';
-import 'package:submission/pages/detail_screen.dart';
-import 'package:submission/theme.dart';
+import 'package:Inner/model/houses.dart';
+import 'package:Inner/model/popular_cities.dart';
+import 'package:Inner/pages/detail_screen.dart';
+import 'package:Inner/theme.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
