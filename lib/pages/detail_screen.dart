@@ -173,7 +173,7 @@ class DetailScreen extends StatelessWidget {
                       child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: [Container(
-                              margin: EdgeInsets.only(left: 24, right: 24),
+                              margin: EdgeInsets.only(left: 30, right: 30),
                               child: InkWell(
                                 onTap: () {},
                                 child: Row(

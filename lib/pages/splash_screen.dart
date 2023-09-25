@@ -12,7 +12,9 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: (orientation == Orientation.portrait) ? _columnLayout() : _rowLayout(),
+        child: (orientation == Orientation.portrait)
+            ? _columnLayout()
+            : _rowLayout(),
       ),
     );
   }
@@ -56,7 +58,8 @@ class _rowLayout extends StatelessWidget {
                       }));
                     },
                     style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(17)),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(17)),
                         backgroundColor: primaryColor),
                     child: Text(
                       'Jelajahi',
@@ -110,7 +113,8 @@ class _columnLayout extends StatelessWidget {
                       }));
                     },
                     style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(17)),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(17)),
                         backgroundColor: primaryColor),
                     child: Text(
                       'Jelajahi',
@@ -120,8 +124,12 @@ class _columnLayout extends StatelessWidget {
             ],
           ),
         ),
-        Spacer(),
-        Image.asset('assets/images/splash_img.png')
+        Expanded(
+            child: Image.asset(
+          'assets/images/splash_img.png',
+          width: MediaQuery.of(context).size.width,
+          fit: BoxFit.cover,
+        ))
       ],
     );
   }
