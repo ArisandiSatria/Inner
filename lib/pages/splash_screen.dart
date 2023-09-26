@@ -35,14 +35,19 @@ class _rowLayout extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Penginapan yang Nyaman \nMembawa Kebahagiaan',
-                  style: blackTextStyle.copyWith(fontSize: 18)),
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                'Temukan penginapan dengan cepat, tepat, dan pastinya aman',
-                style: greyTextStyle.copyWith(fontSize: 12),
+              Container(
+                width: 300,
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text('Penginapan yang Nyaman \nMembawa Kebahagiaan',
+                      style: blackTextStyle.copyWith(fontSize: 18)),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    'Temukan penginapan dengan cepat, tepat, dan pastinya aman',
+                    style: greyTextStyle.copyWith(fontSize: 12),
+                  ),
+                ]),
               ),
               SizedBox(
                 height: 40,
@@ -69,7 +74,9 @@ class _rowLayout extends StatelessWidget {
             ],
           ),
         ),
-        Spacer(),
+        SizedBox(
+          height: double.infinity,
+        ),
         Image.asset('assets/images/splash_img.png')
       ],
     );
